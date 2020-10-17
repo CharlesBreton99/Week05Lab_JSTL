@@ -25,12 +25,13 @@
         <form action="" method="post">
         <c:forEach items="${items}" var="items">
      
-            <input type="radio" name='anItem' values='${items}'>${items} <br>
+            <input type="radio" name='anItem' values="${items}">${items} <br>
+                   
 
         </c:forEach>       
             <input type="submit" value="Delete">
             <input type="hidden" name="action" value="delete">
         </form>
-        <p><a href="ShoppingList?action="</a>Logout</p>
+        <p><a href="ShoppingList?action=logout"</a>Logout</p>
     </body>
 </html>
